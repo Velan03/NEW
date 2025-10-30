@@ -41,6 +41,11 @@
 }
 
 .text-content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
   max-width: 500px;
   text-align: center;
 }
@@ -58,6 +63,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
+  height: 80%;
 }
 
 .inner-feature {

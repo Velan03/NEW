@@ -104,14 +104,16 @@ export class LandingPageComponent {
     const segment = this.currentSegment();
     const progress = this.scrollProgress();
 
-    if (segment === this.SEGMENT_COUNT) {
-      return progress;
+    // Fade in during Segment 2 (200vh - 300vh)
+    if (segment === 2) {
+      return progress; // Fade in from 0 to 1
     }
 
-    if (segment > this.SEGMENT_COUNT) {
+    // Fully visible in Segment 3 (300vh - 400vh)
+    if (segment >= 3) {
       return 1;
     }
 
-    return 0;
+    return 0; // Hidden before segment 2
   });
 }
