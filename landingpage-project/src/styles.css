@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'primeicons/primeicons.css';
 
-
- html{scroll-behavior: smooth;} 
+html {
+  scroll-behavior: smooth;
+}
+:root,
+:host {
+  color-scheme: white;
+}
